@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire - Site de rencontre</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Formulaire de rencontre</legend>
+            <p><label for="info1">Nom :</label>
+                <input type="text" id="info1" pattern="\D[^0-9]{1,44}">
+            </p>
+            <p><label for="info2">prenom :</label>
+                <input type="text" id="info2" pattern="\D[^0-9]{1,44}">
+            </p>
+            <p><label for="info3">e-mail :</label>
+                <input type="text" id="info3" pattern="^.+@.+\.+(com|net|org|fr\b)$" placeholder="***@***.(com, net, fr, org)">
+                <!-- <input type="email" id="info3" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> -->
+            </p>
+            <p> Sexe: 
+           
+            <input type="radio" name="sexe"  />Masculin
+            <input type="radio" name="sexe" checked/>Féminin
+            </p>
+
+            <p> Choisissez le format:
+               
+                <input type="file" name="format" accept="image/png, image/jpeg" />
+               
+
+               
+                </p>
+
+            <p>
+                Choisissez un pays :
+                <select name="" id="">
+                    <option value="1">FRANCE</option>
+                    <option value="2">ANGLETERRE</option>
+                    <option value="3" selected>ALLEMAGNE</option>
+                    <option value="4">ITALIE</option>
+                    <option value="5">SUISSE</option>
+                    <option value="6">ESPAGNE</option>
+                </select>
+            </p>
+
+            <p>
+                Choisissez des langages :
+                <select name="" id="" size="3" multiple>
+                    <option value="1">FRANCE</option>
+                    <option value="2">ANGLETERRE</option>
+                    <option value="3" selected>ALLEMAGNE</option>
+                    <option value="4">ITALIE</option>
+                    <option value="5">SUISSE</option>
+                    <option value="6">ESPAGNE</option>
+                </select>
+            </p>
+
+            <p>
+                Choisissez les domaines d'activités:
+                Plombie <input type="checkbox">&nbsp &nbsp
+                Électricien <input type="checkbox">&nbsp &nbsp
+                Maçon <input type="checkbox">&nbsp &nbsp
+                Carreleur <input type="checkbox">&nbsp &nbsp
+                Menuisier <input type="checkbox">&nbsp &nbsp
+                Couvreur <input type="checkbox">&nbsp &nbsp
+            </p>
+
+
+
+            <button type="submit">Registration</button>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
